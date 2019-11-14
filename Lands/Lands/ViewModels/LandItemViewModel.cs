@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Lands.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
@@ -24,7 +21,7 @@ namespace Lands.ViewModels
         private async void SelectLand()
         {
             MainViewModel.GetInstance().Land = new LandViewModel(this);
-            //await Application.Current.MainPage.Navigation.PushAsync(new LandTabbedPage());
+            await Application.Current.MainPage.Navigation.PushAsync(new LandPage());
         }
 
 
